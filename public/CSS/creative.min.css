@@ -3,6 +3,13 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */.navbar-default,a{-webkit-transition:all .35s;-moz-transition:all .35s}
+ body {
+   background: url(https://lh3.google.com/u/0/d/1pXdMdmKTtfXqBmuaB766-6HzV8P4JPSm=w1830-h915-iv1) no-repeat;
+   /* background: url(../Img/screen.png); */
+      -webkit-background-size:cover;
+      -moz-background-size:cover;background-size:cover;
+      -o-background-size:cover;background-position:center;background-attachment: fixed; 
+ }
  header,header .header-content{
    height: 605px;
     position:relative;width:100%;text-align:center}
@@ -13,7 +20,7 @@
       -webkit-background-size:cover;
       -moz-background-size:cover;background-size:cover;
       -o-background-size:cover;background-position:center;background-attachment: fixed; 
-  background-image:url('https://lh3.google.com/u/0/d/1pXdMdmKTtfXqBmuaB766-6HzV8P4JPSm=w1830-h915-iv1');
+  
   color:#fff}
   header .header-content{padding:100px 15px}
   header .header-content .header-content-inner 
@@ -87,11 +94,11 @@
     font-size:16px;margin-bottom:50px}
     @media (min-width:768px) {
       .profile-image {
-        background: radial-gradient(#40404b, #111118); 
+        /* background: radial-gradient(#40404b, #111118);  */
         width: 560px;
         padding: 20px;
-        border-style: solid;
-        border-radius: 50%;
+        /* border-style: solid;
+        border-radius: 50%; */
       }
       header{min-height:50%}
       header .header-content{
@@ -109,7 +116,7 @@
     position: relative;
    }
    
- .slide1 {
+ /* .slide1 {
   animation:fade 8s infinite;
   -webkit-animation:fade 8s infinite;
   z-index: 0;
@@ -146,14 +153,14 @@
    33.333% { opacity: 0}
    66.666% { opacity: 1}
    100% { opacity: 0}
- }
+ } */
  .profile-image {
-  background: radial-gradient(#6a6761,#5a564f);
+  /* background: radial-gradient(#6a6761,#5a564f); */
    width: 80%;
    margin-left: 10%;
    padding: 1%;
-   border-style: double;
-   border-radius: 10%;
+   /* border-style: double;
+   border-radius: 10%; */
  }
 
  .bg-gradient {
@@ -182,6 +189,31 @@
 }
 section {
   padding: 30px;
-  /* background-image: url('../Img/IMG_1032.png') */
-  background-color: #c2b394
+  /* background: url('../Img/backdrop.png') no-repeat center; */
+  background-size: cover;
+  width: 100%;
 }
+.title h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-transform:none; 
+  background: -webkit-linear-gradient(#554d3b, #362d1e,  #6b5840); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.city h1 {
+  font-size: 70px;
+  text-transform:none; 
+  background: -webkit-linear-gradient(#665a42, #362c1e,  #83715a); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: monospace;
+  margin: 0%;
+}
+#contact {
+  bottom: 0%;
+}
+
+
+
