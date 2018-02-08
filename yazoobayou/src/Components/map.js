@@ -9,7 +9,7 @@ const MyMapComponent = compose(
 
 
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ height: `500px`, width:'100%' }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
@@ -17,10 +17,10 @@ const MyMapComponent = compose(
 )((props) =>
   <GoogleMap
     defaultZoom={17}
-    defaultCenter={{ lat: 30.364101, lng: -88.548219 }}
+    defaultCenter={{ lat: 30.356401, lng: -88.558919 }}
   >
     <Marker 
-      position={{ lat: 30.364141, lng: -88.548214 }} 
+      position={{ lat: 30.356641, lng: -88.558519 }} 
       onClick={props.onMarkerClick} 
       
     />
