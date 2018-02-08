@@ -38,7 +38,7 @@ class Home extends Component {
                     <div xs={12} md={12} className="mapHeader">
     
                         {/* <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ... Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum</p> */}
-                        <h4 className="red-header">Apartments are located at 611 Sarazzin Ave, Pascagoula, MS 39567</h4>
+                        <h4 className="red-header">Apartments are located at 611 Sarrazin Ave, Pascagoula, MS 39567</h4>
                         {/* <p>We are conveniantly located on the corner of Market St and Covenant St. Come by to take a look at our large selection of wine, liquor, and liqueurs.</p> */}
                         
                     </div>
