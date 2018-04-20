@@ -10,7 +10,7 @@
 }
 
 #root {
-  background: url(./Img/backApt.JPG)  bottom no-repeat;
+  background: url(./Img/DSC_0572.JPG)  bottom no-repeat;
   background-size: cover;
   background-attachment: fixed;
   z-index: -22;
@@ -68,10 +68,9 @@ col img {
   margin-right: auto;
   margin-left: auto;
   background-color: #ebe4d7ee;
-  /* background-image: url(../src/Img/backdropYazoo.jpg); */
 }
 .container-home h2 {
-  background: radial-gradient(#37526b, #38576b, #1d3a55);
+  background: radial-gradient(#37526b, #527286, #1d3a55);
   color: beige;
   margin-top: 1px;
   padding: 5px 20px;
@@ -196,13 +195,12 @@ col img {
   padding: 0px;
   border-bottom: #111118;
   border-bottom-style: groove;
-  border-bottom-width: 0px;
+  border-bottom-width: 3px;
 }
 .jumbotron .inner{
-  height: 200px;  
-  background: radial-gradient(#23292028, #3d443c83, #3e463af5);
-  /* background-color: #7e9db9e7; */
-  /* background: url(../src/Img/backdropYazoo.jpg); */
+  height: 150px;  
+  /* background: radial-gradient(#af8a6acc, #966336d2, #774a22d2); */
+  background-image: url('./Img/teak_wood.JPG');
   background-position: -0px -0px;
   background-size: 100% 100% !important; 
   display:flex; 
@@ -215,6 +213,8 @@ col img {
 
 
 .jumbotron .inner h1{
+  height: 100%;
+  text-align: center;
   font-family: cursive;
   -webkit-filter: drop-shadow(1px 2px 0.0px rgb(8, 16, 61));
   filter: drop-shadow(5px 3px 0.1px rgb(8, 9, 61));
@@ -224,7 +224,7 @@ col img {
   background: -webkit-linear-gradient(#ffffff, #eff1f4,  #fbfdfe); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 99px;
+  
   
   /* text-rendering: geometricPrecision; */
   text-decoration: underline;
@@ -253,20 +253,20 @@ col img {
   position: relative;
  }
 .slide1 {
-  animation:fade 8s infinite;
-  -webkit-animation:fade 8s infinite;
+  animation:fade 10s infinite;
+  -webkit-animation:fade 10s infinite;
   z-index: 0;
   position: absolute;
  }
  .slide2 {
-  animation:fade2 8s infinite;
-  -webkit-animation:fade2 8s infinite;
+  animation:fade2 10s infinite;
+  -webkit-animation:fade2 10s infinite;
   z-index: 0;
   position: absolute;
  }
  .slide3 {
-  animation:fade3 8s infinite;
-  -webkit-animation:fade3 8s infinite;
+  animation:fade3 10s infinite;
+  -webkit-animation:fade3 10s infinite;
   z-index: 0;
   width: 108%;
   
@@ -355,11 +355,10 @@ col img {
     }
   }
   
-  
   @media screen and (max-width: 1200px){ 
     .jumbotron .inner{ 
       background-size: 100% 199px !important; 
-      height: 200px;
+      height: 140px;
     }
   }
   @media screen and (max-width: 980px) { 
@@ -367,17 +366,28 @@ col img {
       background-size: 100% 157px;
     }
   }
+  @media screen and (max-width: 956px) { 
+    .jumbotron .inner{ 
+      height: 200px;
+    }
+  }
   @media screen and (max-width: 800px) { 
     .jumbotron .inner{ 
       /* background: 0 !important;  */
       height: 200px ;
-      
+    }
+    .jumbotron .inner h1{ 
+      /* background: 0 !important;  */
+      height: 100% ;
     }
   }
-  @media screen and (max-width: 450px) { 
+  @media screen and (max-width: 487px) { 
     .jumbotron .inner{ 
       /* background: 0 !important;  */
       height: 160px ;
-      
+    }
+    .jumbotron .inner h1{ 
+      /* background: 0 !important;  */
+      font-size: 60px;
     }
   }
