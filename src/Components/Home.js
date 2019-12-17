@@ -27,7 +27,7 @@ class Home extends Component {
                     </Col>
                     <Col xs={6} md={6}>
                     <h3 className="red-header">8 Unit Apartment Complex</h3>
-                    <h3 className="red-header">Rates: $475 and $500 Per Month</h3>
+                    <h3 className="red-header">Rates: $500 and $525 Per Month</h3>
                     <h3 className="red-header">On Site Parking</h3>
                     <h3 className="red-header">Water Included</h3>
                     <h3 className="red-header">For Inqueries, Call Liquors Unlimited at 228.762.3874 </h3>
