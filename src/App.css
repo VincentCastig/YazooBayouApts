@@ -11,9 +11,9 @@
 }
 
 #root {
-  background: url(./Img/DSC_0572.JPG)  bottom no-repeat;
+  /* background: url(./Img/DSC_0572.JPG)  bottom no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   z-index: -22;
   
 }
@@ -113,21 +113,7 @@ col img {
   height: 1250px;
 }
 }
-#footer{
-  min-height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-  /* background: radial-gradient(#37526b, #38576b, #1d3a55); */
-  background-color: #000000;
-  /* background-image: none; */
-  color: white;
-  /* position: absolute; */
-  bottom: 0;
-}
+
 
 .image-container {
   width: 100%;
@@ -187,7 +173,6 @@ col img {
   margin-top: 0px; 
   overflow: hidden; 
   color:inherit;
-  background: none; 
   background-attachment: fixed;
   min-height:auto;
   -webkit-background-size:cover; 
@@ -198,40 +183,9 @@ col img {
   border-bottom-style: groove;
   border-bottom-width: 3px;
 }
-.jumbotron .inner{
-  height: 150px;  
-  /* background: radial-gradient(#af8a6acc, #966336d2, #774a22d2); */
-  background-image: url('./Img/teak_wood.JPG');
-  background-position: -0px -0px;
-  background-size: 100% 100% !important; 
-  display:flex; 
-  /* text-shadow: #28288d; */
-  justify-content: center; 
-  align-items:center; 
-  flex-direction: column; 
-  
-}
 
 
-.jumbotron .inner h1{
-  height: 100%;
-  text-align: center;
-  font-family: cursive;
-  -webkit-filter: drop-shadow(1px 2px 0.0px rgb(8, 16, 61));
-  filter: drop-shadow(5px 3px 0.1px rgb(8, 9, 61));
-  font-size: 90px;
-  font-weight: 600;
-  text-transform:none; 
-  background: -webkit-linear-gradient(#ffffff, #eff1f4,  #fbfdfe); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  
-  /* text-rendering: geometricPrecision; */
-  text-decoration: underline;
-  text-decoration-style: double; 
-  text-underline-position: below; 
-}
+
 .jumbotron .inner  h2{
   font-family: cursive;
   font-size: 22px;
@@ -294,18 +248,10 @@ col img {
   100% { opacity: 0}
 }
 
-@media (min-width: 200px) {
-  .jumbotron h1{
-    font-size:38px; 
-    line-height: 0.8;
-    text-decoration-line: underline
-  }
-}
 @media (min-width: 400px) {
   .jumbotron h1{
     font-size:55px; 
     line-height: 0.8;
-    text-decoration-line: underline
   }
 }
 
@@ -320,18 +266,7 @@ col img {
     line-height: 0.8;
     text-decoration-line: none;
   }
-  .jumbotron .inner img{
-    position: absolute;
-    width: 700px;
-    margin-top: -160px; 
-    color: transparent;
-    -webkit-filter: drop-shadow(0px 183px 0.0px rgb(3, 3, 11));
-    filter: drop-shadow(0px 183px 0.0px rgb(2, 3, 7));
-    }
-    .jumbotron .inner  h2{
-      font-size: 24px;
-      margin-top: 148px;
-    }
+  
 }
  
 @media (min-width:1200px) {
@@ -339,21 +274,7 @@ col img {
     font-size:78px; 
     line-height: 0.8;
   }
-  .profile-image {
-    background: radial-gradient(#40404b, #111118); 
-    width: 56px;
-    padding: 20px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-  .jumbotron .inner img{
-    position: absolute;
-    width: 860px;
-    margin-top: -150px; 
-    color: transparent;
-    -webkit-filter: drop-shadow(0px 183px 0.0px rgb(61, 8, 10));
-    filter: drop-shadow(0px 183px 0.0px rgb(61, 8, 10));
-    }
+ 
   }
   
   @media screen and (max-width: 1200px){ 
@@ -377,18 +298,10 @@ col img {
       /* background: 0 !important;  */
       height: 200px ;
     }
-    .jumbotron .inner h1{ 
-      /* background: 0 !important;  */
-      height: 100% ;
-    }
   }
   @media screen and (max-width: 487px) { 
     .jumbotron .inner{ 
       /* background: 0 !important;  */
       height: 160px ;
-    }
-    .jumbotron .inner h1{ 
-      /* background: 0 !important;  */
-      font-size: 60px;
     }
   }

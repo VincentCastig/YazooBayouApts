@@ -1,59 +1,58 @@
-import React, { Component } from "react";
-import { compose, withProps } from "recompose";
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
-import key from './config';
 
-const MyMapComponent = compose(
-  withProps({
-    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${key}.exp&libraries=geometry,drawing,places`,
+import { React, useState, useEffect } from 'react';
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
 
-    loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `500px`, width:'100%' }} />,
-    mapElement: <div style={{ height: `100%` }} />,
-  }),
-  withScriptjs,
-  withGoogleMap
-)((props) =>
-  <GoogleMap
-    defaultZoom={17}
-    defaultCenter={{ lat: 30.356401, lng: -88.558919 }}
-  >
-    <Marker 
-      position={{ lat: 30.356641, lng: -88.558519 }} 
-      onClick={props.onMarkerClick} 
-      
-    />
-  </GoogleMap>
-)
+const containerStyle = {
+  height: "300px",
+  width: "100%",
+};
 
-class Map extends Component {
-  state = {
-    isMarkerShown: true,
+const center = {
+  lat: 30.356401, lng: -88.558919
+};
+
+const isSafariOniPhone = () => {
+  const userAgent = navigator.userAgent;
+  const isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
+  const isIphone = /iPhone/.test(userAgent);
+  return isSafari && isIphone;
+};
+
+
+const MyMapComponent = () => {
+  const [isBigIntSupported] = useState(typeof BigInt !== 'undefined');
+  const [isSafariIphone, setIsSafariIphone] = useState(isSafariOniPhone);
+
+
+  useEffect(() => {
+    setIsSafariIphone(isSafariOniPhone());
+  }, []);
+
+
+  if (!isBigIntSupported || isSafariIphone) {
+    return <div>Error Loading Map</div>;  // Display a loading message
   }
 
-  componentDidMount() {
-    this.delayedShowMarker()
-  }
 
-  delayedShowMarker = () => {
-    setTimeout(() => {
-      this.setState({ isMarkerShown: true })
-    }, 3000)
-  }
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY,
+  });
 
-  handleMarkerClick = () => {
-    this.setState({ isMarkerShown: false })
-    this.delayedShowMarker()
-  }
 
-  render() {
-    return (
-      <MyMapComponent
-        
+  return isLoaded ? (
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={center}
+      zoom={15}
+    >
+      <Marker
+        position={center}
       />
-    )
-  }
+    </GoogleMap>)
+    : <></>;
+
 }
 
-export default Map;
+export default MyMapComponent;
