@@ -13,7 +13,7 @@ const Footer = () => {
             <a className="">
                 Terms & Conditions
             </a> */}
-            <p>Content Copyright © 2018 - Yazoo Bayou - 611 Sarrazin Ave - Pascagoula, MS 39567</p> 
+            <p>Content Copyright © 2024 - Yazoo Bayou - 611 Sarrazin Ave - Pascagoula, MS 39567</p> 
         </div>
     )
 }
