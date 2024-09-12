@@ -187,7 +187,6 @@ col img {
   margin-top: 0px; 
   overflow: hidden; 
   color:inherit;
-  background: none; 
   background-attachment: fixed;
   min-height:auto;
   -webkit-background-size:cover; 
@@ -198,40 +197,9 @@ col img {
   border-bottom-style: groove;
   border-bottom-width: 3px;
 }
-.jumbotron .inner{
-  height: 150px;  
-  /* background: radial-gradient(#af8a6acc, #966336d2, #774a22d2); */
-  background-image: url('./Img/teak_wood.JPG');
-  background-position: -0px -0px;
-  background-size: 100% 100% !important; 
-  display:flex; 
-  /* text-shadow: #28288d; */
-  justify-content: center; 
-  align-items:center; 
-  flex-direction: column; 
-  
-}
 
 
-.jumbotron .inner h1{
-  height: 100%;
-  text-align: center;
-  font-family: cursive;
-  -webkit-filter: drop-shadow(1px 2px 0.0px rgb(8, 16, 61));
-  filter: drop-shadow(5px 3px 0.1px rgb(8, 9, 61));
-  font-size: 90px;
-  font-weight: 600;
-  text-transform:none; 
-  background: -webkit-linear-gradient(#ffffff, #eff1f4,  #fbfdfe); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  
-  /* text-rendering: geometricPrecision; */
-  text-decoration: underline;
-  text-decoration-style: double; 
-  text-underline-position: below; 
-}
+
 .jumbotron .inner  h2{
   font-family: cursive;
   font-size: 22px;

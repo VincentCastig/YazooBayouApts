@@ -1,0 +1,38 @@
+h1, h2, h3 {
+    font-family: "Abril Fatface", cursive;
+}
+
+.home-body-wrapper{
+    height: 100% !important;
+}
+
+.image-container{
+    height: 82vh;
+    position: relative;
+    background-image: url('../Img/DSC_0569.JPG');
+    background-size: cover; /* Adjusts the background image to cover the container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  
+    /* Set dimensions */
+    width: 100%; /* Adjust as needed */
+  
+    /* Optional: add a border or shadow */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container-text{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: #fff solid 2px;
+
+    h2{
+        font-size: 5rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+}
+
