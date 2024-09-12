@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import Map from './map';
-import apartment1Image from '../Img/apartment-far-view.JPG';
+import apartment1Image from '../Img/apt-far-view.JPG';
 import kitchenImage from '../Img/kitchen.jpg';
 import bedroomImage from '../Img/bedroom.jpg';
 
