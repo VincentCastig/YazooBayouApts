@@ -41,6 +41,14 @@
     background-position: center;
   }
 
+  @media (max-width: 550px) {
+
+    .logo-image{
+      display: none;
+    }
+  }
+
+
   @media (max-width: 450px) {
     .jumbotron .inner h1{
       right: inherit;
