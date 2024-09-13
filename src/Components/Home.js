@@ -18,8 +18,12 @@ const Home = () => {
             </section>
 
             <main className="container-home">
-                <div className="home-paragraph">
-                    {/* Add any introductory text here */}
+                <div className="home-paragraph-wrapper">
+                    {/* <div className='welcome-text'>
+                        Welcome
+                    </div> */}
+                    <h2>Yazoo Bayou</h2>
+                    <p>Welcome to Yazoo Bayou Apartments, where comfort meets convenience in the heart of Pascagoula, MS. Our apartments offer a serene atmosphere, making it the perfect place to call home. Enjoy peaceful living with scenic bayou views and easy access to local attractions in Pascagoula.</p>
                 </div>
                 <div className="home-wine-container">
                     <div className="content-row">

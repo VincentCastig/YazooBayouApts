@@ -62,27 +62,11 @@ col img {
 .content-row h3 {
   text-align: start;
 }
-.container-home {
-  padding-right: 1px;
-  padding-left: 1px;
-  min-height: 750px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #ebe4d7ee;
-}
-.container-home h2 {
-  background: radial-gradient(#37526b, #527286, #1d3a55);
-  color: beige;
-  margin-top: 1px;
-  padding: 5px 20px;
-  font-family: serif;
-}
+
 
 
 @media (min-width: 768px){
-  .container-home {
-      width: 750px;
-  }
+  
   .content-row {
     margin-right: -15px;
     margin-left: -15px;
@@ -98,17 +82,13 @@ col img {
   }
   }
 @media (min-width: 992px) {
-  .container-home {
-      width: 840px;
-  }
+ 
   .ok {
     height: 1250px;
   }
 }
 @media (min-width: 1200px) {
-.container-home {
-    width: 920px;
-}
+
 .ok {
   height: 1250px;
 }

@@ -2,7 +2,7 @@
 
 .jumbotron {
     background-color: rgb(255, 255, 255);
-    border-top: $primary_color 40px solid;
+    border-top: $bayou_blue 40px solid;
     border-bottom: none;
   }
 
@@ -20,7 +20,7 @@
     position: absolute;
     right: 5%;
     width: max-content;
-    color: $primary_color;
+    color: $bayou_blue;
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
@@ -31,14 +31,14 @@
   }
 
   .logo-image{
-    background: url('../Img/logo/yazoo-bayou-logo.png') no-repeat;
+    background: url('../Img/logo/yb-logo.png') no-repeat;
     background-size: contain;
     width: 100px;
     height: 100px;
     position: absolute;
     left: 1%;
-    filter: brightness(0) saturate(1000%) hue-rotate(90deg);
-
+    background-color: $bayou_blue;
+    background-position: center;
   }
 
   @media (max-width: 450px) {

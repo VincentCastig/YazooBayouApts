@@ -1,5 +1,14 @@
 @import './variables';
 
+body {
+    font-family: "Open Sans", "Open Sans Local Fallback", sans-serif;
+}
+
+p{
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
 h1, h2 {
     font-family: "Abril Fatface", cursive;
 }
@@ -10,6 +19,7 @@ h3{
 
 .home-body-wrapper{
     height: 100% !important;
+    background-color: #f8f9fa;
 }
 
 .image-container{
@@ -84,8 +94,12 @@ h3{
 }
 
 .container-home{
-    background-color:#f3f3f3ee
+    background-color:#f3f3f3ee;
+    width: 95%;
+    max-width: 1000px;
+    padding-top: 3rem;
 }
+
 
 
 #footer{
@@ -96,9 +110,41 @@ h3{
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
-    background-color: $primary_color;
+    background-color: $bayou_blue;
     color: white;
     bottom: 0;
+  }
+
+  .container-home {
+    padding-right: 1px;
+    padding-left: 1px;
+    min-height: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f8f9fa;
+  }
+  .container-home h2 {
+    margin-top: 1px;
+    font-family: serif;
+  }
+
+  .home-paragraph-wrapper h2{
+    display: inline-flex;
+    align-items: center;
+    font-size: 4.5rem;
+    padding: 0;
+    color: $bayou_blue;
+  }
+
+  .home-paragraph-wrapper h2::before{
+    content: "";
+    position: relative;
+    min-width: 75px;
+    //min-width: 100px;
+    height: 2px;
+    margin-right: 20px;
+    display: block;
+    background: #384731;
   }
 
   @media (max-width: 400px) {

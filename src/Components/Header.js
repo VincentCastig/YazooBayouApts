@@ -8,7 +8,7 @@ const Header = () => {
             <div className="jumbotron">
                 <div className="inner">
                     <h1>Yazoo Bayou Apartments</h1>
-                    {/* <div className='logo-image'></div> */}
+                    <div className='logo-image'></div>
                 </div>
             </div>
         </div>
