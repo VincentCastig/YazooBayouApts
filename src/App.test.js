@@ -1,9 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, unmountComponentAtNode } from '@testing-library/react';
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('App component', () => {
+  let container = null;
+
+  beforeEach(() => {
+    // Set up a DOM element as a render target
+    container = document.createElement('div');
+    document.body.appendChild(container);
+  });
+
+  afterEach(() => {
+    // Clean up on exiting
+    unmountComponentAtNode(container);
+    container.remove();
+  });
+
+  it('renders without crashing', () => {
+    render(<App />, container);
+  });
 });
