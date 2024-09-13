@@ -8,7 +8,9 @@
 
 .jumbotron .inner{
     height: 120px;  
+    //height: 90px;
     // background-position: -0px -0px;
+    position: relative;
     display:flex; 
     justify-content: center; 
     align-items:center; 
@@ -18,7 +20,11 @@
 
   .jumbotron .inner h1{
     position: absolute;
-    right: 5%;
+    margin: 0;
+    left: 4%;
+    // top: 50%;
+    // left: 50%;  /* Center horizontally */
+    // transform: translate(-50%, -50%);  /* Adjust for element's size */
     width: max-content;
     color: $bayou_blue;
     text-align: center;
@@ -31,14 +37,41 @@
   }
 
   .logo-image{
-    background: url('../Img/logo/yb-logo.png') no-repeat;
     background-size: contain;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 90px;
     position: absolute;
-    left: 1%;
     background-color: $bayou_blue;
     background-position: center;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .logo-image.right{
+    right: 3%;
+    border-bottom: 6px solid;
+    border-color: #4a7f8c;
+    border-left: 0;
+    border-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-image.left{
+    display: none;
+    // right: 0%;
+    // /* left: 0%; */
+    // border-top-left-radius: 1%;
+    // border-bottom-left-radius: 4%;
+    // border: 1px solid;
+    // border-right: 0;
+    // border-top: 0;
+    // align-items: center;
+    // justify-content: flex-end;
   }
 
   @media (max-width: 550px) {
