@@ -24,18 +24,23 @@ const Home = () => {
                 </article>
                 <section className="home-wine-container">
                     <div className="content-row">
-                        <Col xs={12} md={6} className="slider">
-                            <img className="home-main-image slide1" src={apartment1Image} alt="Apartment units 6 and 7" />
-                            <img className="home-main-image slide2" src={kitchenImage} alt="Kitchen in Yazoo Bayou Apartments" />
-                            <img className="home-main-image slide3" src={bedroomImage} alt="Bedroom in Yazoo Bayou Apartments" />
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <h3 className="red-header">8 Unit Apartment Complex</h3>
-                            <h3 className="red-header">Rates: $675 and $725 Per Month</h3>
-                            <h3 className="red-header">On-site Parking</h3>
-                            <h3 className="red-header">Water Included</h3>
-                            <h3 className="red-header">For Inquiries, Call Liquors Unlimited at 228.762.3874</h3>
-                        </Col>
+                 
+                            <div className='content-image-box'>
+                                <img className="home-main-image" src={bedroomImage} alt="Apartment units 6 and 7" />
+                            </div>
+
+                            <div className='content-image-box'>
+                                <img className="home-main-image" src={kitchenImage} alt="Kitchen in Yazoo Bayou Apartments" />
+                            </div>
+                      
+                         {/* <img className="home-main-image slide3" src={bedroomImage} alt="Bedroom in Yazoo Bayou Apartments" /> */}
+                    </div>
+                    <div className='information-box'>
+                        <h3 className="red-header">8 Unit Apartment Complex</h3>
+                        <h3 className="red-header">Rates: $675 and $725 Per Month</h3>
+                        <h3 className="red-header">On-site Parking</h3>
+                        <h3 className="red-header">Water Included</h3>
+                        <h3 className="red-header">For Inquiries, Call Liquors Unlimited at 228.762.3874</h3>
                     </div>
                     <section id="content-row2">
                         <div className="mapHeader">

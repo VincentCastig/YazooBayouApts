@@ -147,6 +147,26 @@ h3{
     background: #384731;
   }
 
+  .content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content-image-box{
+    width: 48.5%;
+    height: 360px;
+    overflow: hidden;
+  }
+
+  .information-box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 30px;
+}
+
   @media (max-width: 400px) {
 
     .image-container-text h2{
