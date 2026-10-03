@@ -4,7 +4,6 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
 
 const containerStyle = {
-  height: "300px",
   width: "100%",
 };
 
@@ -44,6 +43,7 @@ const MyMapComponent = () => {
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
+      mapContainerClassName="map"
       center={center}
       zoom={15}
     >

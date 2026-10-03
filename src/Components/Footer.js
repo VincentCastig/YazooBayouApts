@@ -1,22 +1,15 @@
 import React from 'react';
-// import { NavDropdown, MenuItem, Navbar, Nav, NavItem } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
-// import { Grid, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
     return (
-        <div id="footer" className="container-home">
-            {/* <hr /> */}
-            {/* <a className="">
-                Privacy Policy
-            </a>
-            <a className="">
-                Terms & Conditions
-            </a> */}
-            <p>Content Copyright © 2024 - Yazoo Bayou - 611 Sarrazin Ave - Pascagoula, MS 39567</p> 
-        </div>
-    )
-}
-
+        <footer className="site-footer">
+            <div className="wrap">
+                <p>&copy; {new Date().getFullYear()} Yazoo Bayou Apartments</p>
+                <p>611 Sarrazin Ave, Pascagoula, MS 39567</p>
+                <p><a href="tel:+12287623874">228.762.3874</a></p>
+            </div>
+        </footer>
+    );
+};
 
 export default Footer;
