@@ -12,7 +12,6 @@ const Home = () => {
                     <p>Eight apartments in Pascagoula, Mississippi. Water included, from $675 a month.</p>
                     <div className="hero-actions">
                         <a className="btn" href="tel:+12287623874">Call 228.762.3874</a>
-                        <a className="btn btn--ghost" href="#apartments">See the apartments</a>
                     </div>
                 </div>
             </section>
