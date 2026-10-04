@@ -1,4 +1,3 @@
-import React from 'react';
 import Map from './map';
 import kitchenImage from '../Img/kitchen.jpg';
 import bedroomImage from '../Img/bedroom.jpg';
@@ -40,11 +39,11 @@ const Home = () => {
 
                     <div className="photo-row">
                         <figure>
-                            <img src={bedroomImage} alt="Bedroom in a Yazoo Bayou apartment" />
+                            <img src={bedroomImage} loading="lazy" alt="Bedroom in a Yazoo Bayou apartment" />
                             <figcaption>Bedroom</figcaption>
                         </figure>
                         <figure>
-                            <img src={kitchenImage} alt="Kitchen in a Yazoo Bayou apartment" />
+                            <img src={kitchenImage} loading="lazy" alt="Kitchen in a Yazoo Bayou apartment" />
                             <figcaption>Kitchen</figcaption>
                         </figure>
                     </div>
