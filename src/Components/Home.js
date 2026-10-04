@@ -8,7 +8,7 @@ const Home = () => {
             <section className="image-container">
                 <div className="image-container-text">
                     <h2>Your home on the bayou</h2>
-                    <p>Eight apartments in Pascagoula, Mississippi. Water included, from $675 a month.</p>
+                    <p>Eight apartments in Pascagoula, Mississippi. Water included, at $775 a month.</p>
                     <div className="hero-actions">
                         <a className="btn" href="tel:+12287623874">Call 228.762.3874</a>
                     </div>
@@ -26,7 +26,7 @@ const Home = () => {
                         <div>
                             <dl className="facts">
                                 <div><dt>Apartments</dt><dd>8 units</dd></div>
-                                <div><dt>Rent</dt><dd>$675 and $725 per month</dd></div>
+                                <div><dt>Rent</dt><dd>$775 per month</dd></div>
                                 <div><dt>Water</dt><dd>Included</dd></div>
                                 <div><dt>Parking</dt><dd>On-site</dd></div>
                             </dl>
